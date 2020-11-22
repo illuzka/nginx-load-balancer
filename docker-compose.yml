@@ -5,10 +5,10 @@ services:
     image: percona/percona-server:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
-      MYSQL_DATABASE: dbname
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASS}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASS}
+      MYSQL_DATABASE: ${MYSQL_DB}
   nginx-load-balancer:
     image: nginx:latest
     ports:
