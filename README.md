@@ -8,6 +8,6 @@
 
 ####
 
-git clone https://github.com/illuzka/nginx-load-balancer.git
-cd nginx-load-balancer
-docker-compose up -d 
+git clone https://github.com/illuzka/nginx-load-balancer.git  
+cd nginx-load-balancer  
+docker-compose up -d  
